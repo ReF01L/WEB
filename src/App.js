@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="login">
+            <div className="login_title">Регистрация</div>
+            <div className="login_content">
+                <div className="login_content_input">
+                    <div className="login_content_input-title">Фамилия</div>
+                    <input type="text" className="login_content_input-input"/>
+                </div>
+
+                <div className="login_content_input">
+                    <div className="login_content_input-title">Имя</div>
+                    <input type="text" className="login_content_input-input"/>
+                </div>
+
+                <div className="login_content_input">
+                    <div className="login_content_input-title">email</div>
+                    <input type="email" className="login_content_input-input"/>
+                </div>
+
+                <div className="login_content_input">
+                    <div className="login_content_input-title">Запомнить меня</div>
+                    <input type="checkbox" className="login_content_input-checkbox"/>
+                </div>
+            </div>
+            <div className="login_btns">
+                <div className="login_btns_sign_in">
+                    Уже есть аккаунт
+                </div>
+                <div className="login_btns_auth">
+                    Зарегистрироваться
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
